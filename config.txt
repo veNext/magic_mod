@@ -1,0 +1,2 @@
+--the amount of hp you start with
+ mp_level = 100
