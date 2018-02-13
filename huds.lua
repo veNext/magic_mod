@@ -2,6 +2,7 @@ dofile(minetest.get_modpath('magic_mod')..'/config.txt')
 
 mps = mp_level or ""
 mp_text = "mp: " .. mps
+mprl = 0 or ""
 
 minetest.register_on_joinplayer(function(player)
     player:hud_add({
@@ -16,10 +17,16 @@ minetest.register_on_joinplayer(function(player)
 
 
 minetest.register_globalstep(function(dtime)
-mp_text = "mp: " .. mps
 player:hud_change(mp, "text", mp_text)
-if mps <mp_level then
-mps = mps + 0.1
+mp_text = "mp: " .. mps
+if mps < mp_level then
+if mprl == 0 then
+mprl = 1
+minetest.after(pm_speed, function(dtime)
+mps = mps + 1
+mprl = 0
+end)
+end
 end
 end)
 
