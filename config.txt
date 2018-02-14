@@ -1,4 +1,4 @@
 --the amount of hp you start with
  mp_level = 100
 --how long it takes for your mp to go up
- pm_speed = 0.50
+ pm_speed = 1
