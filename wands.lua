@@ -12,8 +12,8 @@ minetest.register_tool("magic_mod:electric_wand", {
 	end,
 })
 
-minetest.register_tool("magic_mod:drak_wand", {
-	description = "drak wand",
+minetest.register_tool("magic_mod:dark_wand", {
+	description = "dark wand",
 	inventory_image = "wand2.png",
     stack_max = 1,
 	on_use = function(itemstack, user, pointed_thing) if mps > 4 then

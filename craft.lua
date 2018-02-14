@@ -8,7 +8,7 @@ recipe = {
 })
 
 minetest.register_craft({ 	
-output = 'magic_mod:drak_wand 1', 	
+output = 'magic_mod:dark_wand 1', 	
 recipe = { 		
 {'default:obsidian_shard', 'magic_mod:red_diamond', 'default:obsidian_shard'}, 		
 {'', 'default:obsidian_shard', ''}, 		
