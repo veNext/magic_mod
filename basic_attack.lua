@@ -4,10 +4,6 @@ blue_ball = {
 
  shoot_magic_ball = function(itemstack, player)
 	for _,blue_balls in ipairs(blue_ball) do
-		if player:get_inventory():get_stack("main", player:get_wield_index()+1):get_name() == blue_balls[1] then
-			if not minetest.setting_getbool("creative_mode") then
-				player:get_inventory():remove_item("main", blue_balls[1])
-			end
 			local playerpos = player:getpos()
 			local obj = minetest.add_entity({x=playerpos.x,y=playerpos.y+1.5,z=playerpos.z}, blue_balls[2])
 			local dir = player:get_look_dir()
@@ -20,15 +16,9 @@ blue_ball = {
 			obj:get_luaentity().node = player:get_inventory():get_stack("main", 1):get_name()
 			return true
 		end
-	end
+	
 	return false
 end
-
-minetest.register_craftitem("magic_mod:magic_ball", {
-	description = "electric ball",
-	wield_image = "rock1.png",
-	inventory_image = "rock1.png",
-})
 
 local magic_ball_blue={
 	physical = false,
