@@ -1,5 +1,3 @@
-dofile(minetest.get_modpath('magic_mod')..'/config.txt')
-
 mps = mp_level or ""
 mp_text = "mp: " .. mps
 mprl = 0 or ""

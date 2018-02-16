@@ -1,0 +1,2 @@
+
+mana.subtract(playername, value)
