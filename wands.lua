@@ -24,3 +24,16 @@ minetest.register_tool("magic_mod:dark_wand", {
 		return itemstack
 	end,
 })
+
+minetest.register_tool("magic_mod:ice_wand", {
+	description = "ice wand",
+	inventory_image = "ice_wand.png",
+    stack_max = 1,
+	on_use = function(itemstack, user, pointed_thing) if mps > 4 then
+		if shoot_ice_ball(item, user, pointed_thing) then
+			mps = mps - 5
+		end
+		end
+		return itemstack
+	end,
+})
