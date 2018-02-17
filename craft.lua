@@ -26,6 +26,24 @@ recipe = {
 })
 
 minetest.register_craft({ 	
+output = 'magic_mod:judgment_wand 1', 	
+recipe = { 
+{'bones:bones', 'magic_mod:judgment_crystal', 'bones:bones'}, 		
+{'', 'bones:bones', ''}, 		
+{'', 'bones:bones', ''}, 	
+} 
+})
+
+minetest.register_craft({ 	
+output = 'magic_mod:lunar_wand 1', 	
+recipe = { 		
+{'default:obsidian', 'magic_mod:lunar_crystal', 'default:obsidian'}, 		
+{'', 'default:obsidian', ''}, 		
+{'', 'default:obsidian', ''}, 	
+} 
+})
+
+minetest.register_craft({ 	
 output = 'magic_mod:red_crystal 1', 	
 recipe = { 		
 {'magic_mod:crystal_no_color', 'bucket:bucket_lava',},
@@ -43,5 +61,19 @@ minetest.register_craft({
 output = 'magic_mod:ice_crystal 1', 	
 recipe = { 		
 {'default:ice', 'magic_mod:crystal_no_color', 'default:ice',},
+} 
+})
+
+minetest.register_craft({ 	
+output = 'magic_mod:judgment_crystal 1', 	
+recipe = { 		
+{'bones:bones', 'magic_mod:crystal_no_color', 'flowers:rose',},
+} 
+})
+
+minetest.register_craft({ 	
+output = 'magic_mod:lunar_crystal 1', 	
+recipe = { 		
+{'default:obsidian', 'magic_mod:crystal_no_color',},
 } 
 })

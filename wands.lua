@@ -37,3 +37,29 @@ minetest.register_tool("magic_mod:ice_wand", {
 		return itemstack
 	end,
 })
+
+minetest.register_tool("magic_mod:judgment_wand", {
+	description = "judgment wand",
+	inventory_image = "hp_wand.png",
+    stack_max = 1,
+	on_use = function(itemstack, user, pointed_thing) if mps > 4 then
+		if shoot_judgment_ball(item, user, pointed_thing) then
+			mps = mps - 5
+		end
+		end
+		return itemstack
+	end,
+})
+
+minetest.register_tool("magic_mod:lunar_wand", {
+	description = "lunar wand",
+	inventory_image = "lunar_wand.png",
+    stack_max = 1,
+	on_use = function(itemstack, user, pointed_thing) if mps > 4 then
+		if shoot_lunar_ball(item, user, pointed_thing) then
+			mps = mps - 5
+		end
+		end
+		return itemstack
+	end,
+})

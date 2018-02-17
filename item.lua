@@ -17,3 +17,13 @@ minetest.register_craftitem("magic_mod:ice_crystal", {
 description = "ice crystal",
 inventory_image = "crystal_ice.png"
 })
+
+minetest.register_craftitem("magic_mod:judgment_crystal", {
+description = "judgment crystal",
+inventory_image = "crystal_judgment.png"
+})
+
+minetest.register_craftitem("magic_mod:lunar_crystal", {
+description = "lunar crystal",
+inventory_image = "crystal_lunar.png"
+})
