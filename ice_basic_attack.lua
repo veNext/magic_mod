@@ -27,7 +27,7 @@ local ice_ball={
 	visual_size = {x=0.5, y=0.5},
 	textures = {"ice_ball.png"},
 	lastpos={},
-	collisionbox = {0,0,0,1,1,1},
+	collisionbox = {-0.1,-0.1,-0.1,0.1,0.1,0.1},
 }
 
 ice_ball.on_step = function(self, dtime)

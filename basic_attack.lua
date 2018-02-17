@@ -27,7 +27,7 @@ local magic_ball_blue={
 	visual_size = {x=0.5, y=0.5},
 	textures = {"magic_ball.png"},
 	lastpos={},
-	collisionbox = {0,0,0,1,1,1},
+	collisionbox = {-0.1,-0.1,-0.1,0.1,0.1,0.1},
 }
 
 magic_ball_blue.on_step = function(self, dtime)
