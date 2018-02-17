@@ -3,7 +3,7 @@ description = "crystal ore",
 tiles = {"default_stone.png^crystal_ore.png"},
 is_ground_content = true,
 groups = {cracky=3, stone=1},
-drop = "magic_mod:crystal_no_color"
+drop = "magic_mod:crystal_shard"
 })
 
 minetest.register_ore({ 

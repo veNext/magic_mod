@@ -77,3 +77,12 @@ recipe = {
 {'default:obsidian', 'magic_mod:crystal_no_color',},
 } 
 })
+
+minetest.register_craft({ 	
+output = 'magic_mod:crystal_no_color 1', 	
+recipe = { 		
+{'magic_mod:crystal_shard', 'magic_mod:crystal_shard', 'magic_mod:crystal_shard'}, 		
+{'magic_mod:crystal_shard', 'default:diamond', 'magic_mod:crystal_shard'}, 		
+{'magic_mod:crystal_shard', 'magic_mod:crystal_shard', 'magic_mod:crystal_shard'}, 	
+} 
+})

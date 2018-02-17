@@ -27,3 +27,8 @@ minetest.register_craftitem("magic_mod:lunar_crystal", {
 description = "lunar crystal",
 inventory_image = "crystal_lunar.png"
 })
+
+minetest.register_craftitem("magic_mod:crystal_shard", {
+description = "crystal shard",
+inventory_image = "crystal_shart.png"
+})
