@@ -83,6 +83,12 @@ playername = "singleplayer"
 		end
 	end
 
+if self.lastpos.x~=nil then
+		if node.name == "default:water_source" or node.name == "default:water_flowing" or 
+node.name == "default:river_water_source" or node.name == "default:river_water_flowing" then
+minetest.set_node({x=pos.x, y=pos.y, z=pos.z}, {name="default:ice"})end
+end
+
 	if self.lastpos.x~=nil then
 		if node.name ~= "air" then
 		  if node.name ~= "default:water_source" then
