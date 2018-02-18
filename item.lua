@@ -28,6 +28,12 @@ description = "lunar crystal",
 inventory_image = "crystal_lunar.png"
 })
 
+minetest.register_craftitem("magic_mod:fire_crystal", {
+description = "fire crystal",
+inventory_image = "crystal_fire.png"
+})
+
+
 minetest.register_craftitem("magic_mod:crystal_shard", {
 description = "crystal shard",
 inventory_image = "crystal_shart.png"

@@ -44,6 +44,15 @@ recipe = {
 })
 
 minetest.register_craft({ 	
+output = 'magic_mod:fire_wand 1', 	
+recipe = { 		
+{'default:bronze_ingot', 'magic_mod:fire_crystal', 'default:bronze_ingot'}, 		
+{'default:bronze_ingot', 'default:bronze_ingot', 'default:bronze_ingot'}, 		
+{'', 'default:bronze_ingot', ''}, 	
+} 
+})
+
+minetest.register_craft({ 	
 output = 'magic_mod:red_crystal 1', 	
 recipe = { 		
 {'magic_mod:crystal_no_color', 'bucket:bucket_lava',},
@@ -74,10 +83,17 @@ recipe = {
 minetest.register_craft({ 	
 output = 'magic_mod:lunar_crystal 1', 	
 recipe = { 		
-{'default:obsidian', 'magic_mod:crystal_no_color',},
+{'magic_mod:crystal_no_color', 'default:obsidian',},
 } 
 })
 
+
+minetest.register_craft({ 	
+output = 'magic_mod:fire_crystal 1', 	
+recipe = { 		
+{'magic_mod:crystal_no_color', 'fire:flint_and_steel',},
+} 
+})
 minetest.register_craft({ 	
 output = 'magic_mod:crystal_no_color 1', 	
 recipe = { 		
