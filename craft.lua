@@ -102,3 +102,54 @@ recipe = {
 {'magic_mod:crystal_shard', 'magic_mod:crystal_shard', 'magic_mod:crystal_shard'}, 	
 } 
 })
+
+minetest.register_craft({
+	output = 'magic_mod:crystal_sword',
+	recipe = {
+		{'', 'magic_mod:crystal_shard', ''},
+		{'', 'magic_mod:crystal_shard', ''},
+		{'', 'default:obsidian', ''},
+	}
+})
+
+minetest.register_craft({ 	
+output = 'magic_mod:electric_sword 1', 	
+recipe = { 		
+{'magic_mod:crystal_sword', 'magic_mod:blue_crystal',},
+} 
+})
+
+minetest.register_craft({ 	
+output = 'magic_mod:dark_sword 1', 	
+recipe = { 		
+{'magic_mod:crystal_sword', 'magic_mod:red_crystal',},
+} 
+})
+
+minetest.register_craft({ 	
+output = 'magic_mod:ice_sword 1', 	
+recipe = { 		
+{'magic_mod:crystal_sword', 'magic_mod:ice_crystal',},
+} 
+})
+
+minetest.register_craft({ 	
+output = 'magic_mod:judgment_sword 1', 	
+recipe = { 		
+{'bones:bones', 'magic_mod:crystal_sword', 'magic_mod:judgment_crystal'},
+} 
+})
+
+minetest.register_craft({ 	
+output = 'magic_mod:lunar_sword 1', 	
+recipe = { 		
+{'magic_mod:crystal_sword', 'magic_mod:lunar_crystal',},
+} 
+})
+
+minetest.register_craft({ 	
+output = 'magic_mod:fire_sword 1', 	
+recipe = { 		
+{'magic_mod:crystal_sword', 'magic_mod:fire_crystal',},
+} 
+})
